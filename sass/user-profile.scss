@@ -118,6 +118,11 @@ h6 { @include font-size(0.750); }
 // Left Panel
 // *********************************
 
+.left-panel-user.sticky {
+	position:fixed;
+	top:20px;
+}
+
 .user-avatar {
 }
 
@@ -193,6 +198,11 @@ h6 { @include font-size(0.750); }
 	}
 }
 
+.user-nav li a.selected {
+	background-color:$white;
+	color:$grey;
+}
+
 .user-nav-icon {
 	display:inline-block;
 	width:20px;
@@ -261,9 +271,8 @@ h6 { @include font-size(0.750); }
 }
 
 .calendar {
-	height:400px;
+	height:auto;
 	width:500px;
-	border:$border-size $stroke $dkgrey;
 }
 
 .calendar-wrap, .activities-wrap {
@@ -411,10 +420,6 @@ h6 { @include font-size(0.750); }
 // Friends
 // *********************************
 
-.user-friends {
-	border-bottom:0;
-}
-
 .friends {
 	@extend .clearfix;
 }
@@ -447,4 +452,43 @@ h6 { @include font-size(0.750); }
 	color:$white;
 	background-color:$teal;
 	width:100%;
+}
+
+// Reviews
+// *********************************
+
+.user-reviews {
+	border-bottom:0;
+}
+
+.review-single {
+	margin-bottom:$margin * 1.5;
+}
+
+.review-head {
+	margin-bottom:$margin / 2;
+}
+
+.review-head--studio {
+	@include font-size(1.125);
+	color:$blue;
+	display:block;
+}
+
+.review-head--date {
+	@include font-size(0.750);
+}
+
+.review-body {
+	@include font-size(0.875);
+}
+
+.review-body--title {
+	font-weight:bold;
+}
+
+.review-body--copy {
+	display:block;
+	margin-bottom:$margin / 2;
+	@include font-size(0.750);
 }

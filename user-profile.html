@@ -5,7 +5,11 @@
 <title>FiTMAPPED - User Profile Dev</title>
 
 <link rel="stylesheet" href="css/user-profile.css">
-<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<link rel='stylesheet' href='css/theme.css' />
+<link rel='stylesheet' href='css/fullcalendar.css' />
+
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src='jquery/jquery-ui-1.10.3.custom.min.js'></script>
 
 </head>
 <body>
@@ -14,25 +18,27 @@
 
 	<div class="left-panel">
 
-		<div class="user-avatar">
-			<div class="user-img">
-				<a class="add-friend-btn icon">&#xf055;</a>
-				<img src="img/profile-image.jpg" />
+		<div class="left-panel-user">
+			<div class="user-avatar">
+				<div class="user-img">
+					<a class="add-friend-btn icon">&#xf055;</a>
+					<img src="img/profile-image.jpg" />
+				</div>
+				<div class="user-score">
+					<div class="user-score--value">29</div>
+					<div class="user-score--title">FiT SCORE</div>
+				</div>
 			</div>
-			<div class="user-score">
-				<div class="user-score--value">29</div>
-				<div class="user-score--title">FiT SCORE</div>
-			</div>
-		</div>
 
-		<ul class="user-nav">
-			<li><a href=""><span class="user-nav-icon icon">&#xf05a;</span> About</a></li>
-			<li><a href=""><span class="user-nav-icon icon">&#xf073;</span> Calendar</a></li>
-			<li><a href=""><span class="user-nav-icon icon">&#xf024;</span> Badges</a></li>
-			<li><a href=""><span class="user-nav-icon icon">&#xf005;</span> Places</a></li>
-			<li><a href=""><span class="user-nav-icon icon">&#xf0c0;</span> Friends</a></li>
-			<li><a href=""><span class="user-nav-icon icon">&#xf040;</span> Reviews</a></li>
-		</ul>
+			<ul class="user-nav">
+				<li><a href="#about"><span class="user-nav-icon icon">&#xf05a;</span> About</a></li>
+				<li><a href="#cal"><span class="user-nav-icon icon">&#xf073;</span> Calendar</a></li>
+				<li><a href="#badges"><span class="user-nav-icon icon">&#xf024;</span> Badges</a></li>
+				<li><a href="#places"><span class="user-nav-icon icon">&#xf005;</span> Places</a></li>
+				<li><a href="#friends"><span class="user-nav-icon icon">&#xf0c0;</span> Friends</a></li>
+				<li><a href="#reviews"><span class="user-nav-icon icon">&#xf040;</span> Reviews</a></li>
+			</ul>
+		</div>
 
 	</div>
 
@@ -49,7 +55,7 @@
 
 		</section>
 
-		<section>
+		<section id="about">
 
 			<div class="user-about row">
 
@@ -60,13 +66,13 @@
 
 		</section>
 
-		<section>
+		<section id="cal">
 
 			<div class="user-calendar row">
 
 				<div class="calendar-wrap">
 					<h4>Calendar</h4>
-					<div class="calendar"></div>
+					<div id='calendar' class="calendar"></div>
 				</div>
 
 				<div class="activities-wrap">
@@ -90,7 +96,7 @@
 
 		</section>
 
-		<section>
+		<section id="badges">
 
 			<div class="user-badges row">
 
@@ -123,7 +129,7 @@
 
 		</section>
 
-		<section>
+		<section id="places">
 
 			<div class="user-places row">
 
@@ -265,7 +271,7 @@
 
 		</section>
 
-		<section>
+		<section id="friends">
 
 			<div class="user-friends row">
 
@@ -319,9 +325,83 @@
 
 		</section>
 
+		<section id="reviews">
+
+			<div class="user-reviews row">
+
+				<h4>Reviews</h4>
+				<div class="reviews">
+					<div class="review-single">
+						<div class="review-head">
+							<span class="review-head--studio">Super Cycle Spin Center</span>
+							<span class="review-head--date">December 20th, 2013</span>
+							<span class="review-head--stars"><img src="img/stars.png" /></span>
+						</div>
+						<div class="review-body">
+							<span class="review-body--title">This is the best review ever written.</span>
+							<p class="review-body--copy">Nulla et arcu eu elit interdum feugiat. Nunc in turpis. Maecenas condimentum convallis eros. Aliquam lacinia arcu quis odio hendrerit tempor. Quisque lobortis tempus augue. Praesent ante. Curabitur bibendum erat at lacus. Pellentesque quis metus. Fusce ullamcorper ligula nec tellus. Nam velit tellus, venenatis at, consectetur at, volutpat id, justo. Vestibulum in augue. Donec tempor pede non sem. Etiam a orci. Vivamus nec justo a ligula bibendum posuere. Sed in turpis. In mattis elit id magna. Maecenas erat nulla, rhoncus ut, malesuada a, egestas eget, turpis.</p>
+							<p class="review-body--copy">Vestibulum sed nisl quis sem auctor convallis. Suspendisse potenti. Phasellus mollis purus euismod nisi. Aliquam risus. Nunc faucibus lectus a lacus. Nullam elementum volutpat sapien. Quisque tristique sem in lectus. Vestibulum vitae magna. Vivamus molestie nulla et orci. Ut sollicitudin. Nunc eget enim.</p>
+						</div>
+					</div>
+					<div class="review-single">
+						<div class="review-head">
+							<span class="review-head--studio">Super Cycle Spin Center</span>
+							<span class="review-head--date">December 20th, 2013</span>
+							<span class="review-head--stars"><img src="img/stars.png" /></span>
+						</div>
+						<div class="review-body">
+							<span class="review-body--title">This is the best review ever written.</span>
+							<p class="review-body--copy">Nulla et arcu eu elit interdum feugiat. Nunc in turpis. Maecenas condimentum convallis eros. Aliquam lacinia arcu quis odio hendrerit tempor. Quisque lobortis tempus augue. Praesent ante. Curabitur bibendum erat at lacus. Pellentesque quis metus. Fusce ullamcorper ligula nec tellus. Nam velit tellus, venenatis at, consectetur at, volutpat id, justo. Vestibulum in augue. Donec tempor pede non sem. Etiam a orci. Vivamus nec justo a ligula bibendum posuere. Sed in turpis. In mattis elit id magna. Maecenas erat nulla, rhoncus ut, malesuada a, egestas eget, turpis.</p>
+							<p class="review-body--copy">Vestibulum sed nisl quis sem auctor convallis. Suspendisse potenti. Phasellus mollis purus euismod nisi. Aliquam risus. Nunc faucibus lectus a lacus. Nullam elementum volutpat sapien. Quisque tristique sem in lectus. Vestibulum vitae magna. Vivamus molestie nulla et orci. Ut sollicitudin. Nunc eget enim.</p>
+						</div>
+					</div>
+					<div class="review-single">
+						<div class="review-head">
+							<span class="review-head--studio">Super Cycle Spin Center</span>
+							<span class="review-head--date">December 20th, 2013</span>
+							<span class="review-head--stars"><img src="img/stars.png" /></span>
+						</div>
+						<div class="review-body">
+							<span class="review-body--title">This is the best review ever written.</span>
+							<p class="review-body--copy">Nulla et arcu eu elit interdum feugiat. Nunc in turpis. Maecenas condimentum convallis eros. Aliquam lacinia arcu quis odio hendrerit tempor. Quisque lobortis tempus augue. Praesent ante. Curabitur bibendum erat at lacus. Pellentesque quis metus. Fusce ullamcorper ligula nec tellus. Nam velit tellus, venenatis at, consectetur at, volutpat id, justo. Vestibulum in augue. Donec tempor pede non sem. Etiam a orci. Vivamus nec justo a ligula bibendum posuere. Sed in turpis. In mattis elit id magna. Maecenas erat nulla, rhoncus ut, malesuada a, egestas eget, turpis.</p>
+							<p class="review-body--copy">Vestibulum sed nisl quis sem auctor convallis. Suspendisse potenti. Phasellus mollis purus euismod nisi. Aliquam risus. Nunc faucibus lectus a lacus. Nullam elementum volutpat sapien. Quisque tristique sem in lectus. Vestibulum vitae magna. Vivamus molestie nulla et orci. Ut sollicitudin. Nunc eget enim.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
 	</div>
 
 </div>
+
+<script src='js/base.js'></script>
+<script src='js/waypoints.min.js'></script>
+<script src='js/fullcalendar.min.js'></script>
+<script>
+
+	$(document).ready(function() {
+	
+		var date = new Date();
+		var d = date.getDate();
+		var m = date.getMonth();
+		var y = date.getFullYear();
+		
+		$('#calendar').fullCalendar({
+			theme: false,
+			header: {
+				left: 'prev',
+				center: 'title',
+				right: 'next'
+			},
+			editable: true,
+			
+		});
+		
+	});
+
+</script>
 
 </body>
 </html>
