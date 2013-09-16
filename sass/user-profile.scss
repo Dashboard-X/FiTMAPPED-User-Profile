@@ -1,122 +1,16 @@
-// Imports
+// Import Base
 // *********************************
 
-@import "compass/reset";
-@import "compass/css3";
-@import "variables";
-@import "fonts";
-@import "mixins";
+@import "base";
 
-// Universal & Body
+// Left Panel
 // *********************************
-
-* {
-	@include box-sizing(border-box);
-}
-
-body {
-	color:$grey;
-	font: {
-		family: $Helvetica;
-		weight: normal;
-	}
-	@include font-size(0.875);
-	line-height: 1.125em;
-	margin:50px 0;
-}
-
-.clearfix {
-    zoom:1;
-    &:before, &:after {
-        content: "\0020";
-        display: block;
-        height: 0;
-        overflow: hidden;
-    }
-    &:after {
-        clear: both;
-    }
-}
-
-.float-left {
-	float:left;
-}
-
-a {
-	@include transition(all 0.3s ease-in-out);
-	&:hover {
-		@include transition(all 0.3s ease-in-out);
-	}
-}
-
-// Headings & Text
-// *********************************
-
-.icon {
-	font: {
-		family: "FontAwesome";
-		size: 1em;
-		weight: normal;
-		style: normal;
-	}
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font-weight:bold;
-	color:$teal;
-	margin-bottom:$margin / 2;
-}
-
-h1 { @include font-size(2.5); }
-h2 { @include font-size(1.875); }
-h3 { @include font-size(1.5); }
-h4 { @include font-size(1.125); }
-h5 { @include font-size(0.875); }
-h6 { @include font-size(0.750); }
-
-// Buttons
-// *********************************
-
-.btn {
-	display:inline-block;
-	height:30px;
-	padding:0 10px;
-	text-align:center;
-	font-size:12px;
-	font-weight:500;
-	line-height:30px;
-	text-transform:uppercase;
-	background-color:$blue;
-	color:$white;
-	@include border-radius(4px, 4px);
-}
-
-// Structure
-// *********************************
-
-.container {
-	width:1000px;
-	margin:$margin auto;
-}
 
 .left-panel {
 	width:200px;
 	float:left;
 	margin-right:$margin;
 }
-
-.profile-content {
-	width:780px;
-	float:left;
-}
-
-.row {
-	padding: $row-padding;
-	border-bottom:$border-size $stroke $dkgrey;
-}
-
-// Left Panel
-// *********************************
 
 .left-panel-user.sticky {
 	position:fixed;
@@ -211,6 +105,11 @@ h6 { @include font-size(0.750); }
 
 // Profile Content
 // *********************************
+
+.profile-content {
+	width:780px;
+	float:left;
+}
 
 .user-heading {
 	padding-top:0;
