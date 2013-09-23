@@ -1,6 +1,22 @@
 $(document).ready(function() {
 
-	// smooth scroll
+	// Datepicker
+
+	$('.selectDate').datepicker({ dateFormat: 'DD, M dd' })
+					.val($.datepicker.formatDate('DD, M dd', new Date()));
+
+    // Actions
+
+	$('.btn-save').click(function(){
+		$(this).savedChanges();
+	});
+
+	$.fn.savedChanges = function(){
+		$(this).html('<i class="icon-ok"></i> Changes Saved')
+			   .css('background-color','##1bb9b5');
+	};
+
+	// Smooth Scroll
 
 	$('a[href^="#"]').bind('click.smoothscroll',function (e) {
 	    e.preventDefault();
@@ -13,23 +29,7 @@ $(document).ready(function() {
 	    });
 	});
 
-	// sticky menu
-
-	/*
-	$(window).scroll(function() {
-	
-		if($(this).scrollTop() > 40) {
-			$('.left-panel-user').stop().addClass('sticky').animate({ top: '20px' });
-			$('.left-panel').addClass('sticky-height');
-			$('.user-score').slideUp();
-		} else {
-			$('.left-panel-user').removeClass('sticky');
-			$('.left-panel').removeClass('sticky-height');
-			$('.user-score').slideDown();
-		}
-
-	});
-	*/
+	// Sticky menu
 
 	var nav = $('.left-panel-user');
 	var left_panel = $('.left-panel');

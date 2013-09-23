@@ -167,15 +167,18 @@ h6 {
 
 .btn {
   display: inline-block;
-  height: 30px;
-  padding: 0 10px;
+  height: 40px;
+  padding: 0 20px;
   text-align: center;
   font-size: 12px;
   font-weight: 500;
-  line-height: 30px;
+  line-height: 40px;
   text-transform: uppercase;
   background-color: #0069a0;
   color: white;
+  -webkit-border-radius: 4px 4px;
+  -moz-border-radius: 4px / 4px;
+  border-radius: 4px / 4px;
 }
 
 .container {

@@ -79,16 +79,16 @@ h6 { @include font-size(0.750); }
 
 .btn {
 	display:inline-block;
-	height:30px;
-	padding:0 10px;
+	height:40px;
+	padding:0 20px;
 	text-align:center;
 	font-size:12px;
 	font-weight:500;
-	line-height:30px;
+	line-height:40px;
 	text-transform:uppercase;
 	background-color:$blue;
 	color:$white;
-	//@include border-radius(4px, 4px);
+	@include border-radius(4px, 4px);
 }
 
 // Structure
