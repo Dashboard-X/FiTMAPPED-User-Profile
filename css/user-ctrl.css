@@ -224,7 +224,8 @@ input[type="phone"],
 input[type="password"],
 input[type="email"],
 input[type="date"],
-input[type="checkbox"] {
+input[type="checkbox"],
+select {
   height: 40px;
   width: 100%;
   border: 1px solid #ebebeb;
@@ -237,7 +238,8 @@ input[type="phone"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
 input[type="date"]:focus,
-input[type="checkbox"]:focus {
+input[type="checkbox"]:focus,
+select:focus {
   border: 1px solid #1bb9b5;
 }
 
@@ -251,6 +253,15 @@ textarea {
 }
 textarea:focus {
   border: 1px solid #1bb9b5;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  border: 1px solid #ebebeb;
+  border-radius: 0;
+  -webkit-border-radius: 0;
 }
 
 .top {
