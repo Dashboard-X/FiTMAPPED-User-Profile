@@ -2,24 +2,15 @@
 // *********************************
 
 form {
-	margin-top:20px;
-}
-
-form input,
-form select,
-form textarea {
-	font-size:14px;
-}
-
-form > div {
-	display:inline-block;
-}
-
-form > div.form-row {
-	display:block;
-	margin-bottom:20px;
-	overflow:visible;
-}
+	> div {
+		display:inline-block;
+	}
+	> div.form-row {
+		display:block;
+		margin-bottom:20px;
+		overflow:visible;
+	}
+}	
 
 label {
 	display:inline-block;
@@ -42,6 +33,7 @@ select {
 	outline:none;
 	padding:10px;
 	vertical-align:middle;
+	font-size:14px;
 	&:focus {
 		border:$border $teal;
 	}
@@ -91,41 +83,48 @@ select {
 	width:140px;
 }
 
-.time > div {
-	display:inline-block;
-	width:80px;
+.time {
+	> div {
+		display:inline-block;
+		width:110px;
+	}
+	> label {
+		width:70px;
+	}
 }
 
-.time > label {
-	width:70px;
+.repeat {
+	> div {
+		display:inline-block;
+		width:138px;
+	}
+	> label {
+		width:90px;
+	}
 }
 
-.repeat > div {
-	display:inline-block;
-	width:168px;
-}
-
-.repeat > label {
-	width:90px;
-}
-
-.activities input[type="checkbox"] {
-	display:none;
-}
-
-.activities label {
-	border:$border $dkgrey;
-	height:40px;
-	width:auto;
-	padding:0 20px;
-	text-align:center;
-	line-height:40px;
-	background-color:#fff;
-	cursor:pointer;
-}
-
-.activities input[type="checkbox"]:checked + label {
-	background-color:#efefef;
+.activities {
+	input[type="checkbox"] {
+		display:none;
+	}
+	input[type="checkbox"]:checked + label {
+		background-color:#efefef;
+	}
+	label {
+		border:$border $dkgrey;
+		height:40px;
+		width:auto;
+		padding:0 20px;
+		text-align:center;
+		line-height:40px;
+		background-color:#fff;
+		cursor:pointer;
+		@include transition(all 0.3s ease-in-out);
+		&:hover {
+			background-color:#efefef;
+			@include transition(all 0.3s ease-in-out);
+		}
+	}
 }
 
 .form-buttons {
