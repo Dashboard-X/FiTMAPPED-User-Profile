@@ -110,13 +110,6 @@ a:hover {
   transition: all 0.3s ease-in-out;
 }
 
-.icon {
-  font-family: "FontAwesome";
-  font-size: 1em;
-  font-weight: normal;
-  font-style: normal;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   color: #1bb9b5;
@@ -437,9 +430,9 @@ select {
   font-size: 1.5rem;
   line-height: 3.125rem;
   text-align: center;
-  color: #777777;
   background-color: white;
   border: 1px solid #dddddd;
+  color: #0069a0;
 }
 .user-ctrl-nav li a.active, .user-ctrl-nav li a:hover {
   background-color: whitesmoke;

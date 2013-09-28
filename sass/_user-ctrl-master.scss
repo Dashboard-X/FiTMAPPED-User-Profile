@@ -35,9 +35,9 @@
 	width:50px;
 	@include font-size(1.5,3.125);
 	text-align:center;
-	color:$grey;
 	background-color:$white;
 	border:$border $dkgrey;
+	color:$blue;
 
 	&.active, &:hover {
 		background-color:$ltgrey;

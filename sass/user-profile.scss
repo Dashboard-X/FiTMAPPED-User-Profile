@@ -97,10 +97,12 @@
 	color:$grey;
 }
 
-.user-nav-icon {
+i.user-nav-icon {
 	display:inline-block;
+	float:left;
 	width:20px;
-	margin-right:6px;
+	margin-right:10px;
+	line-height:17px;
 }
 
 // Profile Content
@@ -140,7 +142,7 @@
 		position:relative;
 		top:25px;
 		font: {
-			size:3em;
+			size:2.5em;
 			weight:normal;
 		}
 		color:$grey;
@@ -369,7 +371,7 @@
 }
 
 .review-head--studio {
-	@include font-size(1.125);
+	@include font-size(1.250);
 	color:$blue;
 	display:block;
 }
@@ -383,7 +385,9 @@
 }
 
 .review-body--title {
-	font-weight:bold;
+	display:block;
+	margin:10px 0;
+	font-weight:700;
 }
 
 .review-body--copy {

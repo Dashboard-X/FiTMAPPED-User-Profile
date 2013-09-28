@@ -110,13 +110,6 @@ a:hover {
   transition: all 0.3s ease-in-out;
 }
 
-.icon {
-  font-family: "FontAwesome";
-  font-size: 1em;
-  font-weight: normal;
-  font-style: normal;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   color: #1bb9b5;
@@ -267,10 +260,12 @@ h6 {
   color: #777777;
 }
 
-.user-nav-icon {
+i.user-nav-icon {
   display: inline-block;
+  float: left;
   width: 20px;
-  margin-right: 6px;
+  margin-right: 10px;
+  line-height: 17px;
 }
 
 .profile-content {
@@ -301,7 +296,7 @@ h6 {
   display: inline-block;
   position: relative;
   top: 25px;
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: normal;
   color: #777777;
 }
@@ -513,10 +508,10 @@ h6 {
 }
 
 .review-head--studio {
-  font-size: 18px;
-  line-height: 27px;
-  font-size: 1.125rem;
-  line-height: 1.6875rem;
+  font-size: 20px;
+  line-height: 30px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
   color: #0069a0;
   display: block;
 }
@@ -536,7 +531,9 @@ h6 {
 }
 
 .review-body--title {
-  font-weight: bold;
+  display: block;
+  margin: 10px 0;
+  font-weight: 700;
 }
 
 .review-body--copy {
