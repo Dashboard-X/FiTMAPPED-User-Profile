@@ -4,6 +4,7 @@
 .user-ctrl-places.content {
 	border:0;
 	padding-left:0;
+	padding-right:0;
 	width:100%;
 
 	.places-col {
@@ -14,15 +15,6 @@
 		&:last-child {
 			margin-right:0;
 		}
-	}
-	.been-col {
-
-	}
-	.favs-col {
-
-	}
-	.want-col {
-
 	}
 }
 

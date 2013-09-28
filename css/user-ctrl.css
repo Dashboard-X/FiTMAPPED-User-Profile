@@ -198,7 +198,7 @@ form > div.form-row {
 
 label {
   display: inline-block;
-  width: 120px;
+  width: 125px;
   text-align: right;
   vertical-align: middle;
   padding-right: 20px;
@@ -265,7 +265,7 @@ select {
 
 .col-4-4 {
   display: inline-block;
-  width: 560px;
+  width: 590px;
 }
 
 .date > div {
@@ -283,7 +283,7 @@ select {
 
 .repeat > div {
   display: inline-block;
-  width: 138px;
+  width: 168px;
 }
 .repeat > label {
   width: 90px;
@@ -486,6 +486,10 @@ select {
   background-color: #ddd;
 }
 
+.user-ctrl-friends.content {
+  padding-right: 0;
+}
+
 .my-friends {
   margin: 20px 0;
 }
@@ -502,6 +506,7 @@ select {
 .user-ctrl-places.content {
   border: 0;
   padding-left: 0;
+  padding-right: 0;
   width: 100%;
 }
 .user-ctrl-places.content .places-col {
@@ -557,6 +562,10 @@ select {
   line-height: 0.9375rem;
   padding: 5px;
   color: #777777;
+}
+
+.user-ctrl-workout.content {
+  padding-right: 0;
 }
 
 .event-mod .edit {
@@ -678,6 +687,7 @@ select {
   width: 740px;
   min-height: 500px;
   padding: 20px;
+  padding-right: 0;
   margin-bottom: 20px;
   border-left: 1px solid #dddddd;
 }
@@ -696,7 +706,7 @@ select {
   display: inline-block;
   float: left;
   font-size: 24px;
-  margin: 10px;
+  margin: 6px;
 }
 
 .user-stream--msg {

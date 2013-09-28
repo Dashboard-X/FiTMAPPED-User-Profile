@@ -1,9 +1,9 @@
 /*
 Syntax error: Undefined variable: "$stroke".
-        on line 35 of /Users/grantschulte/Sites/FiTMAPPED/PROFILE/FiTMAPPED-User-Profile/sass/user-ctrl-places.scss
+        on line 27 of /Users/grantschulte/Sites/FiTMAPPED/PROFILE/FiTMAPPED-User-Profile/sass/user-ctrl-places.scss
 
 Backtrace:
-/Users/grantschulte/Sites/FiTMAPPED/PROFILE/FiTMAPPED-User-Profile/sass/user-ctrl-places.scss:35
+/Users/grantschulte/Sites/FiTMAPPED/PROFILE/FiTMAPPED-User-Profile/sass/user-ctrl-places.scss:27
 /Users/grantschulte/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.10/lib/sass/script/variable.rb:49:in `_perform'
 /Users/grantschulte/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.10/lib/sass/script/node.rb:40:in `perform'
 /Users/grantschulte/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.10/lib/sass/script/list.rb:70:in `block in _perform'
@@ -80,4 +80,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$stroke\".\A         on line 35 of /Users/grantschulte/Sites/FiTMAPPED/PROFILE/FiTMAPPED-User-Profile/sass/user-ctrl-places.scss"; }
+  content: "Syntax error: Undefined variable: \"$stroke\".\A         on line 27 of /Users/grantschulte/Sites/FiTMAPPED/PROFILE/FiTMAPPED-User-Profile/sass/user-ctrl-places.scss"; }

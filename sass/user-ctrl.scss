@@ -6,6 +6,7 @@
 @import "user-ctrl-master";
 @import "user-ctrl-friends";
 @import "user-ctrl-places";
+@import "user-ctrl-workout";
 
 // Event Mod
 // *********************************
@@ -122,6 +123,7 @@
 	width:740px;
 	min-height:500px;
 	padding:20px;
+	padding-right:0;
 	margin-bottom:20px;
 	border-left:$border $dkgrey;
 }
@@ -142,7 +144,7 @@
 	display:inline-block;
 	float:left;
 	font-size:24px;
-	margin:10px;
+	margin:6px;
 }
 
 .user-stream--msg {
