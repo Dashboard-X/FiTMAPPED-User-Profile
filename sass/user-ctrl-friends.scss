@@ -1,0 +1,16 @@
+// User Control - Friends
+// *********************************
+
+.my-friends {
+	margin:20px 0;
+
+	.friend-mod {
+		display:inline-block;
+		float:left;
+		width:32%;
+		margin:0 2% 10px 0;
+		&:nth-of-type(3n) {
+			margin-right:0;
+		}
+	}
+}

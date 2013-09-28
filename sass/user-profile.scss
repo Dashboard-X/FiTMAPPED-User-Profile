@@ -271,28 +271,33 @@ i.user-nav-icon {
 	border:1px $stroke $dkgrey;
 	height:82px;
 	margin-bottom:$margin / 2;
-}
+	@include transition(all 0.3s ease-in-out);
 
-.place-single img {
-	height:80px;
-	width:80px;
-	border:none;
-	float:left;
-	margin-right:10px;
-}
+	&:hover {
+		background-color:$ltgrey;
+		@include transition(all 0.3s ease-in-out);
+	}
+	img {
+		height:80px;
+		width:80px;
+		border:none;
+		float:left;
+		margin-right:10px;
+	}
 
-.place-name {
-	@include font-size(1.125);
-	font-weight:bold;
-	color:$grey;
-	display:block;
-}
+	.place-name {
+		@include font-size(1.125);
+		font-weight:bold;
+		color:$grey;
+		display:block;
+	}
 
-.place-single p {
-	float:left;
-	@include font-size(0.625);
-	padding:10px;
-	color:$grey;
+	p {
+		float:left;
+		@include font-size(0.625);
+		padding:10px;
+		color:$grey;
+	}
 }
 
 .place-actions {

@@ -80,6 +80,9 @@ h6 { @include font-size(0.750); }
 	background-color:$blue;
 	color:$white;
 	@include border-radius(4px, 4px);
+	&:hover, &.active {
+		background-color:$teal;
+	}
 }
 
 // Structure

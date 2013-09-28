@@ -173,6 +173,9 @@ h6 {
   -moz-border-radius: 4px / 4px;
   border-radius: 4px / 4px;
 }
+.btn:hover, .btn.active {
+  background-color: #1bb9b5;
+}
 
 .container {
   width: 1000px;
@@ -409,8 +412,18 @@ i.user-nav-icon {
   border: 1px solid #dddddd;
   height: 82px;
   margin-bottom: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-
+.place-single:hover {
+  background-color: whitesmoke;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
 .place-single img {
   height: 80px;
   width: 80px;
@@ -418,8 +431,7 @@ i.user-nav-icon {
   float: left;
   margin-right: 10px;
 }
-
-.place-name {
+.place-single .place-name {
   font-size: 18px;
   line-height: 27px;
   font-size: 1.125rem;
@@ -428,7 +440,6 @@ i.user-nav-icon {
   color: #777777;
   display: block;
 }
-
 .place-single p {
   float: left;
   font-size: 10px;

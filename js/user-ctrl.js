@@ -7,12 +7,12 @@ $(document).ready(function(){
     // Form Actions
 
     $.fn.savedChanges = function(){
-		$(this).html('<i class="icon-ok"></i> Changes Saved').css('background-color','#1bb9b5');
+		$(this).html('<i class="icon-ok"></i> Changes Saved').addClass('active');
 	}
 
     function btnOriginal(){
     	var btnOrig = $('.btn-save');
-    	btnOrig.html('Save Changes').css('background-color','#0069a0');
+    	btnOrig.html('Save Changes').removeClass('active');
     }
 
 	$('.btn-save').click(function(){
@@ -21,5 +21,5 @@ $(document).ready(function(){
 
 	$('form').on('input', btnOriginal);
 	$('select, checkbox, radio, .selectDate').change(btnOriginal);
-	
+
 });

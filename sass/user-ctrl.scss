@@ -4,6 +4,8 @@
 @import "base";
 @import "forms";
 @import "user-ctrl-master";
+@import "user-ctrl-friends";
+@import "user-ctrl-places";
 
 // Event Mod
 // *********************************
@@ -66,7 +68,7 @@
 	border:$border $dkgrey;
 	@include transition(all 0.3s ease-in-out);
 	cursor:pointer;
-	
+
 	&:last-child {
 		margin-bottom:0;
 	}

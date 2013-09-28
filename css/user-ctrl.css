@@ -173,6 +173,9 @@ h6 {
   -moz-border-radius: 4px / 4px;
   border-radius: 4px / 4px;
 }
+.btn:hover, .btn.active {
+  background-color: #1bb9b5;
+}
 
 .container {
   width: 1000px;
@@ -481,6 +484,79 @@ select {
 }
 .paging a.inactive {
   background-color: #ddd;
+}
+
+.my-friends {
+  margin: 20px 0;
+}
+.my-friends .friend-mod {
+  display: inline-block;
+  float: left;
+  width: 32%;
+  margin: 0 2% 10px 0;
+}
+.my-friends .friend-mod:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.user-ctrl-places.content {
+  border: 0;
+  padding-left: 0;
+  width: 100%;
+}
+.user-ctrl-places.content .places-col {
+  display: inline-block;
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+}
+.user-ctrl-places.content .places-col:last-child {
+  margin-right: 0;
+}
+
+.place-single {
+  width: 100%;
+  float: left;
+  border: 1px solid #dddddd;
+  height: 82px;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.place-single:hover {
+  background-color: whitesmoke;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.place-single img {
+  height: 80px;
+  width: 80px;
+  border: none;
+  float: left;
+  margin-right: 10px;
+}
+.place-single .place-name {
+  font-size: 16px;
+  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: bold;
+  color: #777777;
+  display: block;
+}
+.place-single p {
+  float: left;
+  font-size: 10px;
+  line-height: 15px;
+  font-size: 0.625rem;
+  line-height: 0.9375rem;
+  padding: 5px;
+  color: #777777;
 }
 
 .event-mod .edit {
