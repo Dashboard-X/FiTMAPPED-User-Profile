@@ -169,7 +169,8 @@ select {
 }
 
 .ui-datepicker-calendar {
-	border-bottom:$border #ddd;
+	border:$border $dkgrey;
+	@include box-shadow(0 0 12px 0 rgba(0,0,0,0.15));
 }
 
 .ui-datepicker-calendar tr td,
