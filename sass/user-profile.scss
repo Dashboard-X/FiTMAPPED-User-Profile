@@ -55,13 +55,13 @@
 	left:5px;
 	height:30px;
 	width:30px;
-	line-height:32px;
+	font-size:20px;
+	line-height:28px;
 	text-align:center;
 	color:$teal;
 	background:$white;
 	background-color:rgba(255,255,255,0.6);
 	cursor:pointer;
-	font-size:22px;
 
 	&:hover {
 		background-color:rgba(255,255,255,0.9);
@@ -102,7 +102,8 @@ i.user-nav-icon {
 	float:left;
 	width:20px;
 	margin-right:10px;
-	line-height:17px;
+	font-size:18px;
+	line-height:18px;
 }
 
 // Profile Content
